@@ -1,0 +1,455 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Barletta Theme\n"
+"POT-Creation-Date: 2016-03-22 22:16+0200\n"
+"PO-Revision-Date: 2015-04-04 15:03+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: MOOZ Themes <info@moozthemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:12
+msgid "Page not found"
+msgstr ""
+
+#: ../archive.php:25
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../archive.php:28
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:31
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:34
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:37
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:40
+msgid "Galleries"
+msgstr ""
+
+#: ../archive.php:43
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:46
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:49
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:52
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:55
+msgid "Statuses"
+msgstr ""
+
+#: ../archive.php:58
+msgid "Audios"
+msgstr ""
+
+#: ../archive.php:61
+msgid "Chats"
+msgstr ""
+
+#: ../archive.php:64 ../sidebar.php:35
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:25
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:32 ../comments.php:50
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:33 ../comments.php:51
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:34 ../comments.php:52
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:57
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:28 ../content-single.php:44
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../content-page.php:41 ../content-single.php:61 ../content.php:50
+msgid "Pages:"
+msgstr ""
+
+#: ../content-page.php:45 ../content-single.php:65 ../content.php:54
+msgid "Page"
+msgstr ""
+
+#: ../content-single.php:35 ../content.php:31
+msgid "Leave a comment"
+msgstr ""
+
+#: ../content-single.php:35 ../content.php:31
+msgid "1 Comment"
+msgstr ""
+
+#: ../content-single.php:35 ../content.php:31
+msgid "% Comments"
+msgstr ""
+
+#: ../content-single.php:37 ../content.php:33
+msgid "Comments Off"
+msgstr ""
+
+#: ../content.php:60
+msgid "Continue Reading"
+msgstr ""
+
+#: ../functions.php:9
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../functions.php:10
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../functions.php:11
+msgid "No Sidebar"
+msgstr ""
+
+#: ../functions.php:12
+msgid "Full Width"
+msgstr ""
+
+#: ../functions.php:15
+msgid "Logo Only"
+msgstr ""
+
+#: ../functions.php:16
+msgid "Logo + Tagline"
+msgstr ""
+
+#: ../functions.php:17
+msgid "Title Only"
+msgstr ""
+
+#: ../functions.php:18
+msgid "Title + Tagline"
+msgstr ""
+
+#: ../functions.php:59
+msgid "Main Menu"
+msgstr ""
+
+#: ../functions.php:202
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../functions.php:204
+msgid "Main sidebar that appears on the left."
+msgstr ""
+
+#: ../functions.php:211
+msgid "Content Sidebar"
+msgstr ""
+
+#: ../functions.php:213
+msgid "Additional sidebar that appears on the right."
+msgstr ""
+
+#: ../functions.php:220
+msgid "Footer Widget 1"
+msgstr ""
+
+#: ../functions.php:222 ../functions.php:231 ../functions.php:240
+msgid "Appears in the footer section of the site."
+msgstr ""
+
+#: ../functions.php:229
+msgid "Footer Widget 2"
+msgstr ""
+
+#: ../functions.php:238
+msgid "Footer Widget 3"
+msgstr ""
+
+#: ../functions.php:268
+msgid ". All rights reserved."
+msgstr ""
+
+#: ../functions.php:274
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr ""
+
+#: ../inc/customizer.php:28
+msgid "Layout options"
+msgstr ""
+
+#: ../inc/customizer.php:29
+msgid "Choose website layout"
+msgstr ""
+
+#: ../inc/customizer.php:41
+msgid "Website Layout Options"
+msgstr ""
+
+#: ../inc/customizer.php:44
+msgid "Choose between different layout options to be used as default"
+msgstr ""
+
+#: ../inc/customizer.php:55
+msgid "Display Comments on Static Pages?"
+msgstr ""
+
+#: ../inc/customizer.php:68
+msgid "Slider Settings"
+msgstr ""
+
+#: ../inc/customizer.php:70
+msgid "Change slider settings here."
+msgstr ""
+
+#: ../inc/customizer.php:84
+msgid "Choose a category."
+msgstr ""
+
+#: ../inc/customizer.php:98
+msgid "Show Slider?"
+msgstr ""
+
+#: ../inc/customizer.php:115
+msgid "Logo"
+msgstr ""
+
+#: ../inc/extras.php:79
+msgid "This post is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: ../inc/extras.php:80
+msgid "Password:"
+msgstr ""
+
+#: ../inc/extras.php:84
+msgid "Submit"
+msgstr ""
+
+#: ../inc/template_tags.php:26
+msgid "Posts navigation"
+msgstr ""
+
+#: ../inc/template_tags.php:30
+msgid "Older posts"
+msgstr ""
+
+#: ../inc/template_tags.php:34
+msgid "Newer posts"
+msgstr ""
+
+#: ../inc/template_tags.php:62
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template_tags.php:66
+msgid "<div class=\"meta-nav\"><span>Published In</span>%title</div>"
+msgstr ""
+
+#: ../inc/template_tags.php:68
+msgid "<div class=\"meta-nav meta-nav-left\"><span>Previous Post</span>%title</div>"
+msgstr ""
+
+#: ../inc/template_tags.php:69
+msgid "<div class=\"meta-nav meta-nav-right\"><span>Next Post</span>%title</div>"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-posts.php:12
+#: ../inc/widgets/widget-barletta-posts.php:13
+msgid "Barletta Recent Posts Widget"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-posts.php:18
+msgid "Recent Posts"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-posts.php:88
+msgid "recent Posts"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-posts.php:95
+#: ../inc/widgets/widget-barletta-social.php:28
+#: ../inc/widgets/widget-barletta-social.php:195
+msgid "Title"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-posts.php:100
+msgid "Limit Posts Number"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:13
+#: ../inc/widgets/widget-barletta-social.php:14
+msgid "Barletta Social Widget"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:35
+msgid "Twitter"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:40
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:45
+msgid "LinkedIn"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:50
+msgid "Google+"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:55
+msgid "Pinterest"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:60
+msgid "YouTube"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:65
+msgid "Vimeo"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:70
+msgid "Flickr"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:75
+msgid "Dribbble"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:80
+msgid "Tumblr"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:85
+msgid "Instagram"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:90
+msgid "Last.fm"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:95
+msgid "SoundCloud"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:199
+msgid "Enter full URL. If you don't want to display element, leave it's URL field empty."
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:203
+msgid "URL address of your Facebook profile or page"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:209
+msgid "URL address of your Twitter profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:215
+msgid "URL address of your Google+ profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:221
+msgid "URL address of your Pinterest profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:227
+msgid "URL address of your Instagram profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:233
+msgid "URL address of your Tumblr profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:239
+msgid "URL address of your Dribbble profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:245
+msgid "URL address of your Last FM profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:251
+msgid "URL address of your Soundcloud profile"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:257
+msgid "URL address of your YouTube channel"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:263
+msgid "URL address of your Flickr profile page"
+msgstr ""
+
+#: ../inc/widgets/widget-barletta-social.php:269
+msgid "URL address of your RSS feed"
+msgstr ""
+
+#: ../index.php:22
+msgid "Previous page"
+msgstr ""
+
+#: ../index.php:23
+msgid "Next page"
+msgstr ""
+
+#: ../searchform.php:13
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:14
+msgctxt "placeholder"
+msgid "Search&hellp;"
+msgstr ""
+
+#: ../searchform.php:14
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:16
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
