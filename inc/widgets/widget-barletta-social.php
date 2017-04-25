@@ -111,7 +111,7 @@ class barletta_social_widget extends WP_Widget
 
 		// Show title
 		if( isset( $widget_title ) ) {
-			echo $before_title . $widget_title . $after_title;
+			echo force_balance_tags($before_title.$widget_title.$after_title);
 		}
 
 		/**
@@ -140,7 +140,7 @@ class barletta_social_widget extends WP_Widget
 
 					if( '' != $barletta_widgets_field_value ) {  ?>
 
-					<a href="<?php echo $barletta_widgets_field_value; ?>" title="<?php echo esc_attr($barletta_widgets_title); ?>"><i class="fa fa-<?php echo esc_attr($barletta_widgets_name); ?>"></i></a>
+					<a href="<?php echo esc_url($barletta_widgets_field_value); ?>" title="<?php echo esc_attr($barletta_widgets_title); ?>"><i class="fa fa-<?php echo esc_attr($barletta_widgets_name); ?>"></i></a>
 
 				<?php }
 				}

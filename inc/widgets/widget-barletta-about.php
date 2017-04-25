@@ -29,9 +29,8 @@ class barletta_about_author extends WP_Widget
 		$attachment_url = isset($instance['attachment_url']) ? $instance['attachment_url'] : '';
 
 		echo $before_widget;
-		echo $before_title;
-		echo $title;
-		echo $after_title;
+		echo force_balance_tags($before_title.$title.$after_title);
+
 
 		/**
 		 * Widget Content
@@ -58,7 +57,7 @@ class barletta_about_author extends WP_Widget
 
 			<div class="author-item">
 				<div class="author-image">
-					<img src="<?php echo $imgsrc; ?>" alt="<?php echo esc_attr($name); ?>" class="<?php echo $attachment_css; ?>" />
+					<img src="<?php echo esc_url($imgsrc); ?>" alt="<?php echo esc_attr($name); ?>" class="<?php echo esc_attr($attachment_css); ?>" />
 				</div>
 				<div class="author-post">
 					<h3><?php echo esc_attr($name); ?></h3>
@@ -88,43 +87,43 @@ class barletta_about_author extends WP_Widget
 
 		<p><label for="Title"><?php esc_html_e('Title ','barletta') ?></label>
 			<input type="text" value="<?php echo esc_attr($instance['title']); ?>"
-			name="<?php echo $this->get_field_name('title'); ?>"
-			id="<?php $this->get_field_id('title'); ?>"
+			name="<?php echo esc_attr($this->get_field_name('title')); ?>"
+			id="<?php echo esc_attr($this->get_field_id('title')); ?>"
 			class="widefat" />
 		</p>
 
 		<p><label for="Name"><?php esc_html_e('Name ','barletta') ?></label>
 			<input type="text" value="<?php echo esc_attr($instance['name']); ?>"
-			name="<?php echo $this->get_field_name('name'); ?>"
-			id="<?php $this->get_field_id('name'); ?>"
+			name="<?php echo esc_attr($this->get_field_name('name')); ?>"
+			id="<?php echo esc_attr($this->get_field_id('name')); ?>"
 			class="widefat" />
 		</p>
 
 		<p><label for="position"><?php esc_html_e('Position ','barletta') ?></label>
 			<input type="text" value="<?php echo esc_attr($instance['position']); ?>"
-			name="<?php echo $this->get_field_name('position'); ?>"
-			id="<?php $this->get_field_id('position'); ?>"
+			name="<?php echo esc_attr($this->get_field_name('position')); ?>"
+			id="<?php echo esc_attr($this->get_field_id('position')); ?>"
 			class="widefat" />
 		</p>
 
-		<p><label for="<?php echo $this->get_field_id('body_content'); ?>"><?php esc_html_e('Content ','barletta') ?></label>
-			<textarea name="<?php echo $this->get_field_name('body_content'); ?>"
-			id="<?php $this->get_field_id('body_content'); ?>"
+		<p><label for="<?php echo esc_attr($this->get_field_id('body_content')); ?>"><?php esc_html_e('Content ','barletta') ?></label>
+			<textarea name="<?php echo esc_attr($this->get_field_name('body_content')); ?>"
+			id="<?php echo esc_attr($this->get_field_id('body_content')); ?>"
 			class="widefat"
 			rows="5" cols="20"><?php echo esc_attr($instance['body_content']); ?></textarea>
 		</p>
 
 		<p><label for="more_text_url"><?php esc_html_e('Link to more info ','barletta') ?></label>
 			<input type="text" value="<?php echo esc_attr($instance['more_text_url']); ?>"
-			name="<?php echo $this->get_field_name('more_text_url'); ?>"
-			id="<?php $this->get_field_id('more_text_url'); ?>"
+			name="<?php echo esc_attr( $this->get_field_name('more_text_url')); ?>"
+			id="<?php echo esc_attr( $this->get_field_id('more_text_url')); ?>"
 			class="widefat" />
 		</p>
 
 		<p><label for="attachment_style"><?php esc_html_e('Rounded Author Image? ','barletta') ?></label>
 			<input type="checkbox" <?php checked( $instance[ 'attachment_style' ], 'on' ); ?> 
-			name="<?php echo $this->get_field_name( 'attachment_style' ); ?>" 
-			id="<?php echo $this->get_field_id( 'attachment_style' ); ?>" 
+			name="<?php echo esc_attr($this->get_field_name( 'attachment_style' )); ?>" 
+			id="<?php echo esc_attr($this->get_field_id( 'attachment_style' )); ?>" 
 			class="checkbox" /> 
 		</p>
 
@@ -132,8 +131,8 @@ class barletta_about_author extends WP_Widget
 			<!-- Image Thumbnail -->
 			<a href="#" class="button custom_media_upload"><?php esc_html_e('Upload Image','barletta') ?></a>
 			<img class="custom_media_image" src="<?php echo esc_attr($instance['attachment_url']); ?>" style="max-width:275px; float:left; margin: 0px 10px 0px 0px; display:inline-block;" />
-			<input class="custom_media_url" type="hidden" name="<?php echo $this->get_field_name('attachment_url'); ?>" value="<?php echo esc_attr($instance['attachment_url']); ?>">
-			<input class="custom_media_id" type="hidden" name="<?php echo $this->get_field_name('attachment_id'); ?>" value="<?php echo esc_attr($instance['attachment_id']); ?>">
+			<input class="custom_media_url" type="hidden" name="<?php echo esc_attr($this->get_field_name('attachment_url')); ?>" value="<?php echo esc_attr($instance['attachment_url']); ?>">
+			<input class="custom_media_id" type="hidden" name="<?php echo esc_attr($this->get_field_name('attachment_id')); ?>" value="<?php echo esc_attr($instance['attachment_id']); ?>">
 		</p>
 
 		<script type="text/javascript">

@@ -102,6 +102,20 @@ function barletta_customizer( $wp_customize ) {
 			'type'      => 'checkbox',
 		) );
 
+		// checkbox slider autoplay true/false 
+		$wp_customize->add_setting( 'barletta_slider_autopaly', array(
+			'default'        => false,
+			'transport'  =>  'refresh',
+			'sanitize_callback' => 'barletta_sanitize_checkbox'
+		) );
+
+		$wp_customize->add_control( 'barletta_slider_autopaly', array(
+			'priority'  => 3,
+			'label'     => __('Autoplay?','barletta'),
+			'section'   => 'barletta_slider_options',
+			'type'      => 'checkbox',
+		) );
+
 		/**
 		 * Section: Change footer text
 		 */

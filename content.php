@@ -18,7 +18,7 @@
 
 								?>
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<?php echo get_the_post_thumbnail( get_the_ID(), $barletta_thumbnail ); ?>
+								<?php the_post_thumbnail( $barletta_thumbnail ); ?>
 								</a>
 							<?php endif; ?>
 						</div>
@@ -26,7 +26,7 @@
 						<div class="list-post-body">
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 							<div class="post-meta">
-								<span><?php echo get_the_date(); ?></span>
+								<span><?php the_date(); ?></span>
 								<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 									<span><?php comments_popup_link( esc_html__( 'Leave a comment', 'barletta' ), esc_html__( '1 Comment', 'barletta' ), esc_html__( '% Comments', 'barletta' ) ); ?></span>
 								<?php else: ?>
@@ -34,7 +34,7 @@
 								<?php endif; ?>
 							</div>
 
-							<!-- <div class="post-date"><span>Posted by <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?></span></div>-->
+							<!-- <div class="post-date"><span>Posted by <?php the_author_posts_link(); ?> on <?php the_date(); ?></span></div>-->
 
 							<?php if ( is_search() ) : // Only display Excerpts for Search
 								the_excerpt();

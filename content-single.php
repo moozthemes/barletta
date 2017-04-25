@@ -16,7 +16,7 @@
 			else $barletta_thumbnail = 'barletta-thumbnail';
 		?>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		<?php echo get_the_post_thumbnail( get_the_ID(), $barletta_thumbnail ); ?>
+		<?php the_post_thumbnail( $barletta_thumbnail ); ?>
 		</a>
 	<?php endif; ?>
 		
@@ -29,7 +29,7 @@
 
 	<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
-				<span><?php the_author_posts_link(); ?></span>/<span><i class="fa fa-clock-o"></i><?php echo get_the_date(); ?></span>/
+				<span><?php the_author_posts_link(); ?></span>/<span><i class="fa fa-clock-o"></i><?php the_date(); ?></span>/
 
 				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 					<span><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'barletta' ), esc_html__( '1 Comment', 'barletta' ), esc_html__( '% Comments', 'barletta' ) ); ?></span>

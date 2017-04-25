@@ -20,7 +20,7 @@ get_header(); ?>
 				endif;
 			?>
 
-		<?php endwhile; wp_reset_query(); // end of the loop. ?>
+		<?php endwhile; // end of the loop. ?>
 
 <?php
 get_sidebar();

@@ -26,7 +26,7 @@
 		<!-- Brand and toggle get grouped for better mobile display --> 
 		  <div class="navbar-header"> 
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
-				<span class="sr-only">Toggle navigation</span> 
+				<span class="sr-only"><?php esc_html_e('Toggle navigation','barletta'); ?></span> 
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span> 
@@ -55,4 +55,4 @@
 		<div id="content" class="container">
 		<section>
 			<div class="row">
-				<div class="<?php echo barletta_content_bootstrap_classes(); ?> <?php echo $layout_class; ?>">
+				<div class="<?php echo esc_attr(barletta_content_bootstrap_classes()); ?> <?php echo esc_attr($layout_class); ?>">

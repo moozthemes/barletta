@@ -82,6 +82,9 @@ class barletta_bootstrap_navwalker extends Walker_Nav_Menu {
 
                         // If item has_children add atts to a.
                         if ( $args->has_children && $depth === 0 ) {
+                        //        $atts['href']                   = ! empty( $item->url ) ? $item->url : '';
+                        //        $atts['data-toggle']        = 'dropdown';
+
                                 $atts['href']                   = '#';
                                 $atts['data-toggle']        = 'dropdown';
                                 $atts['class']                        = 'dropdown-toggle';
@@ -193,13 +196,13 @@ class barletta_bootstrap_navwalker extends Walker_Nav_Menu {
                                 $fb_output .= ' class="' . $menu_class . '"';
 
                         $fb_output .= '>';
-                        $fb_output .= '<li><a href="' . esc_url(admin_url( 'nav-menus.php' )) . '">Add a menu</a></li>';
+                        $fb_output .= '<li><a href="' . esc_url(admin_url( 'nav-menus.php' )) . '">' . __('Add a menu', 'barletta') . '</a></li>';
                         $fb_output .= '</ul>';
 
                         if ( $container )
                                 $fb_output .= '</' . $container . '>';
 
-                        echo $fb_output;
+                        echo force_balance_tags($fb_output);
                 }
         }
 }
