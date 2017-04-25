@@ -22,14 +22,16 @@ $('#back-top a').on("click", function(){
 	return false;
 });
 
-// slider
-$('.mz-slider').bxSlider({
-	pager: false,
-	speed: 1000,
-	slideMargin: 0,
-	prevText: '<i class="fa fa-angle-left"></i>',
-	nextText: '<i class="fa fa-angle-right"></i>',
-	easing: 'ease-in-out'
+// add third menu for navwalker
+$(document).ready(function(){
+	$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+		event.preventDefault(); 
+		event.stopPropagation(); 
+		$(this).parent().siblings().removeClass('open');
+		$(this).parent().toggleClass('open');
+	});
 });
+
+
 
 });

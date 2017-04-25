@@ -34,7 +34,7 @@ function barletta_slider() {
 				echo '<li><div class="slider-item">';
 
 				if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-					echo get_the_post_thumbnail( get_the_ID(), 'barletta-large-thumbnail' );
+					 the_post_thumbnail( 'barletta-large-thumbnail' );
 				endif;
 
 				echo '<div class="slide-title">';

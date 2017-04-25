@@ -19,9 +19,7 @@ class barletta_recent_posts extends WP_Widget
 			$limit = isset($instance['limit']) ? esc_html( $instance['limit'] ) : 5;
 
 		echo $before_widget;
-		echo $before_title;
-		echo $title;
-		echo $after_title;
+		echo force_balance_tags($before_title.$title.$after_title);
 
 		/**
 		* Widget Content
@@ -53,7 +51,7 @@ class barletta_recent_posts extends WP_Widget
 					<div class="post-image <?php echo esc_attr(get_post_format()); ?>">
 
 					<a href="<?php echo esc_url(get_permalink()); ?>">
-						<?php if(get_post_format() != 'quote') { echo get_the_post_thumbnail(get_the_ID() , 'thumbnail'); } ?>
+						<?php if(get_post_format() != 'quote') { the_post_thumbnail( 'thumbnail' ); } ?>
 					</a>
 
 					</div> <!-- end post image -->
@@ -61,8 +59,8 @@ class barletta_recent_posts extends WP_Widget
 					<!-- content -->
 					<div class="post-body">
 
-						<h2><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_attr(get_the_title()); ?></a></h2>
-						<div class="post-meta"><span><?php echo esc_attr(get_the_date('d. M , Y')); ?></span><span><i class="fa fa-comment-o"></i> <?php echo get_comments_number(); ?></span></div>
+						<h2><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></h2>
+						<div class="post-meta"><span><?php echo esc_attr(get_the_date('d. M , Y')); ?></span><span><i class="fa fa-comment-o"></i> <?php comments_number(); ?></span></div>
 
 					</div><!-- end content -->
 
@@ -92,13 +90,13 @@ class barletta_recent_posts extends WP_Widget
 
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title','barletta') ?>:</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $instance['title']; ?>" />
+			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php _e('Title','barletta') ?>:</label>
+			<input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>" type="text" value="<?php echo esc_attr($instance['title']); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('limit'); ?>"><?php esc_html_e('Limit Posts Number', 'barletta') ?></label>
-			<input class="widefat" id="<?php $this->get_field_id('limit'); ?>" name="<?php echo $this->get_field_name('limit'); ?>" type="text" value="<?php echo esc_attr($instance['limit']); ?>" />
+			<label for="<?php echo esc_attr($this->get_field_id('limit')); ?>"><?php esc_html_e('Limit Posts Number', 'barletta') ?></label>
+			<input class="widefat" id="<?php echo esc_attr($this->get_field_id('limit')); ?>" name="<?php echo esc_attr($this->get_field_name('limit')); ?>" type="text" value="<?php echo esc_attr($instance['limit']); ?>" />
 		</p>
 
 	<?php

@@ -11,7 +11,7 @@
 
 	<?php if ( has_post_thumbnail() ) : ?>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		<?php echo get_the_post_thumbnail( get_the_ID(), 'barletta-large-thumbnail' ); ?>
+		<?php the_post_thumbnail( 'barletta-large-thumbnail' ); ?>
 		</a>
 	<?php endif; ?>
 		

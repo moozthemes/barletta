@@ -17,12 +17,12 @@
 	endwhile;
 
 	// Previous/next page navigation.
-	$nav = get_the_posts_pagination( array(
+	the_posts_pagination ( array(
 		'type'          => 'list',
 		'prev_text'          => __( 'Previous page', 'barletta' ),
 		'next_text'          => __( 'Next page', 'barletta' )
 	) );
-	echo $nav;
+
 
 // If no content, include the "No posts found" template.
 else :

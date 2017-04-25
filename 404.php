@@ -13,7 +13,7 @@ get_header(); ?>
 		
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<?php echo get_search_form(); ?>
+					<?php get_search_form(); ?>
 				</div>
 			</div>
 		</div>
